@@ -1,7 +1,193 @@
-html {
-    position: relative;
-    min-height: 100%;
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+    html{
+        margin-right: 5rem;
+        margin-left: 5rem;
+    } 
 }
-body{
-    
+@media (min-width: 540px)  {
+    html,header, footer, nav{
+        margin-right: 15rem;
+        margin-left: 15rem;
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    html, body,header, footer, nav{
+        margin-right: 15rem;
+        margin-left: 15rem;
+    }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1300px) {
+    /* banner displayed only for desktops */
+
+    html, body, header, footer, nav{
+        margin-right: 35rem;
+        margin-left: 35rem;
+    }
+    #banner { display: block; }
+}
+
+:root{
+    /*Colors*/
+    --j-black: #1B1919;
+    --j-white: #E1D6D6;
+
+
+    /*Button Colors*/
+    --btn-white: #D9D9D9;
+
+    /*Input Colors*/
+    --input-dark: #333;
+
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: "Poppins-med";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "Poppins-thin";
+    src: url(../fonts/Poppins-Thin.ttf);
+}
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+html {
+    min-height: 100%;
+    background-color: var(--j-black);
+}
+p{
+    font-family: "Poppins-med";
+    color: var(--j-white);
+    font-weight: 400;
+}
+a{
+    font-family: "Poppins";
+    color: var(--j-white);
+    text-decoration: none;
+}
+.a-line{
+    text-decoration: underline;
+}
+input{
+    font-family: "Poppins-thin";
+}
+h1{
+    font-family: "Poppins-bold";
+    color: var(--j-white);
+}
+
+#title{
+    font-family: "Poppins-medium";
+    color: var(--j-white);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#sign-up{
+    font-family: "Poppins-medium";
+    color: var(--j-white);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.small-font{
+    font-size: 15px;
+}
+.medium-font{
+    font-size: 25px;
+}
+.large-font{
+    font-size: 35px;
+}
+.small-image{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.proceed{
+    font-family: "Poppins";
+    font-weight: 300;
+    font-size: 14px;
+    background-color: var(--btn-white);
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color: var(--j-black);
+}
+
+.dark-input{
+    background-color: var(--input-dark);
+}
+.form-control{
+    background-color: var(--input-dark);
+}
+.invalid-feedback{
+    color: #ff606e;
+}
+
+.valid-feedback{
+   color: #2acc80;
+}
+
+section .signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+
+section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 10px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+section .signin .content .form .inputBox .eye{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    top: 5px;
+}
+.link-text{
+    color: var(--j-white);
+    text-decoration: none;
+    font-family: "Poppins-med";
+    font-size: 12px;
 }
