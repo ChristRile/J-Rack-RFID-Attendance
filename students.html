@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Students | J-RACK</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-blue">
+    <header class=" container">
+        <nav class="navbar">
+            <a class="nav-link d-flex justify-content-between">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M15 6L9 12L15 18" stroke="#FFF" stroke-width="2"/>
+                </svg>
+                <!-- Page Name -->
+                <p class="ms-3 m-0">All Students</p>
+            </a>
+            <div class="nav-link">
+                <img src="images/logo.png" alt="" class="round-image-sm">
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <main  class="container">
+        <!--Search-->
+        <div class="input-group mb-4 border rounded-2">
+            <input type="search" placeholder="Search" aria-describedby="button-addon3" class="form-control rounded-start-1 border-0">
+            <div class="input-group-append border-0">
+              <button id="button-addon3" type="button" class="btn btn-link text-success">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="11" cy="11" r="7" stroke="#FFF" stroke-width="2"/>
+                    <path d="M20 20L17 17" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+    </main>
+        <!--Section Students-->
+        <section class="bg-white rounded-top-3 full-height">
+            <div class="d-flex justify-content-between container align-items-center p-3">
+                <p class="m-0 black-sm">Name</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0134 9.49895L16.308 11.8125H14.5092L17.5281 2.81476H19.6105L22.6159 11.8125H20.7259L20.0188 9.49895H17.0134ZM19.6628 8.17426L18.5625 4.53432H18.4832L17.383 8.17426H19.6628Z" fill="black"/>
+                    <path d="M21.87 23.625H15.2348V22.4589L19.5868 16.1814V16.0903H15.3529V14.6273H21.7401V15.7933L17.4083 22.0708V22.1619H21.8717V23.625H21.87ZM7.59378 4.21875C7.59378 3.99497 7.50488 3.78036 7.34665 3.62213C7.18842 3.4639 6.9738 3.375 6.75003 3.375C6.52625 3.375 6.31164 3.4639 6.15341 3.62213C5.99517 3.78036 5.90628 3.99497 5.90628 4.21875V20.7444L3.9724 18.8089C3.89395 18.7304 3.80082 18.6682 3.69833 18.6257C3.59583 18.5833 3.48597 18.5614 3.37503 18.5614C3.26409 18.5614 3.15423 18.5833 3.05173 18.6257C2.94923 18.6682 2.8561 18.7304 2.77765 18.8089C2.6992 18.8873 2.63698 18.9805 2.59452 19.083C2.55206 19.1855 2.53021 19.2953 2.53021 19.4062C2.53021 19.5172 2.55206 19.6271 2.59452 19.7295C2.63698 19.832 2.6992 19.9252 2.77765 20.0036L6.15265 23.3769L6.16447 23.3888C6.32288 23.5432 6.53592 23.6288 6.75718 23.6269C6.97843 23.625 7.18997 23.5358 7.34572 23.3786L10.7207 20.0036C10.8792 19.8454 10.9682 19.6307 10.9684 19.4068C10.9686 19.1829 10.8798 18.9682 10.7216 18.8097C10.5633 18.6513 10.3487 18.5622 10.1248 18.562C9.90088 18.5619 9.68609 18.6507 9.52765 18.8089L7.59378 20.7444V4.21875Z" fill="black"/>
+                </svg>
+            </div>
+            <div class="container">
+                <hr class="bg-black mb-0">
+            </div>
+            <!--Student Lists-->
+            <a class="d-flex justify-content-between align-items-center p-3" style="text-decoration: none;">
+                <img src="images/logo.png" alt="" class="round-image-sm">
+                <p class="m-0 black-sm">Dominic Navos</p>
+                <p class="m-0 black-sm">...</p>
+            </a>
+        </section>
+</body>
+</html>

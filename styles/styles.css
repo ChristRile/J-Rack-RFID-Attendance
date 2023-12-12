@@ -100,6 +100,9 @@ h1{
     color: var(--j-black);
 }
 
+.transparent{
+    background-color: transparent;
+}
 .dark-input{
     background-color: var(--input-dark);
 }
@@ -203,6 +206,10 @@ section .dashboard .item{
 .bg-darkblue{
     border-radius: 10px;
     background: linear-gradient(0deg, rgba(70, 86, 229, 0.63) 0%, rgba(70, 86, 229, 0.63) 100%), #030210;
+}
+
+.bg-white{
+    background-color: var(--j-white);
 }
 /*Button Formats*/
 .btn-white{
@@ -378,4 +385,9 @@ input[type="date"] {
   
   input[type="date"]:hover::-webkit-calendar-picker-indicator { opacity:0.05; }
   input[type="date"]:hover::-webkit-calendar-picker-indicator:hover { opacity:0.15; }
-  
+
+
+/*Formats*/
+.full-height{
+    height: 1000px;
+}
