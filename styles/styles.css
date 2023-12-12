@@ -183,14 +183,27 @@ section .dashboard .item{
     border-radius: 50%;
     border: 2px solid var(--j-white);
 }
-
+.round-image-lg{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--j-white);
+}
 /*Background Formats*/
 
 .bg-blue{
     border-radius: 23px;
     background: linear-gradient(180deg, rgba(42, 48, 108, 0.20) 0%, rgba(29, 45, 191, 0.19) 100%), #030210;
 }
-
+.bg-black{
+    border-radius: 23px;
+    background: var(--j-black);
+}
+.bg-darkblue{
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(70, 86, 229, 0.63) 0%, rgba(70, 86, 229, 0.63) 100%), #030210;
+}
 /*Button Formats*/
 .btn-white{
     height: 140px;
